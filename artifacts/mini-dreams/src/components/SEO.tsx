@@ -23,6 +23,7 @@ type SEOProps = {
 
 const SITE_NAME = "Mini Dreams";
 const DEFAULT_IMAGE = "/favicon.svg";
+const BUSINESS_ID = "#business";
 
 function setMeta(attribute: "name" | "property", key: string, value: string) {
   let element = document.head.querySelector<HTMLMetaElement>(
@@ -76,18 +77,26 @@ export function SEO({
     setMeta("property", "og:image", imageUrl);
     setMeta("property", "og:locale", "fr_BE");
     setMeta("property", "og:site_name", SITE_NAME);
+    setMeta("property", "og:image:alt", `${SITE_NAME} — ${title}`);
     setMeta("name", "twitter:card", "summary_large_image");
     setMeta("name", "twitter:title", title);
     setMeta("name", "twitter:description", description);
     setMeta("name", "twitter:image", imageUrl);
+    setMeta("name", "twitter:image:alt", `${SITE_NAME} — ${title}`);
     setLink("canonical", canonicalUrl);
 
     const schema: Record<string, unknown>[] = [
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
+        "@type": "LocalBusiness",
+        "@id": `${siteUrl}/${BUSINESS_ID}`,
         name: SITE_NAME,
         url: siteUrl,
+        description:
+          "Boutique bruxelloise de voitures électriques, quads et motos pour enfants.",
+        telephone: "+32 470 00 00 00",
+        email: "contact@minidreams.be",
+        priceRange: "€€",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Avenue Louise 123",
@@ -95,13 +104,33 @@ export function SEO({
           addressLocality: "Bruxelles",
           addressCountry: "BE",
         },
+        areaServed: {
+          "@type": "Country",
+          name: "Belgique",
+        },
+        openingHoursSpecification: [
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            opens: "10:00",
+            closes: "18:30",
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: "Saturday",
+            opens: "10:00",
+            closes: "19:00",
+          },
+        ],
       },
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
+        "@id": `${siteUrl}/#website`,
         name: SITE_NAME,
         url: siteUrl,
         inLanguage: "fr-BE",
+        publisher: { "@id": `${siteUrl}/${BUSINESS_ID}` },
       },
     ];
 
@@ -124,7 +153,7 @@ export function SEO({
         "@type": "Product",
         name: product.name,
         description: product.description,
-        image: [product.image],
+        image: [imageUrl],
         category: product.category,
         brand: { "@type": "Brand", name: SITE_NAME },
         offers: {
