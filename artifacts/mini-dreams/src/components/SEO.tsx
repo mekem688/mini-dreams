@@ -22,6 +22,7 @@ type SEOProps = {
 };
 
 const SITE_NAME = "Mini Dreams";
+const SITE_URL = "https://glowing-florentine-a03ba2.netlify.app";
 const DEFAULT_IMAGE = "/favicon.svg";
 const BUSINESS_ID = "#business";
 
@@ -60,8 +61,7 @@ export function SEO({
 }: SEOProps) {
   useEffect(() => {
     const siteUrl =
-      import.meta.env.VITE_SITE_URL?.replace(/\/$/, "") ||
-      window.location.origin;
+      import.meta.env.VITE_SITE_URL?.replace(/\/$/, "") || SITE_URL;
     const canonicalUrl = `${siteUrl}${path === "/" ? "" : path}`;
     const imageUrl = image.startsWith("http")
       ? image

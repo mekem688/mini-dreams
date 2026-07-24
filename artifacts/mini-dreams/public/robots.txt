@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://minidreams.be/sitemap.xml
+Sitemap: https://glowing-florentine-a03ba2.netlify.app/sitemap.xml
