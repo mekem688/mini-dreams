@@ -1,10 +1,5 @@
 {
   "scripts": {
-    "build": "vite build",
-    "deploy": "wrangler deploy"
-  },
-  "devDependencies": {
-    "@cloudflare/vite-plugin": "latest",
-    "wrangler": "latest"
+    "build": "pnpm --filter @workspace/mini-dreams run build"
   }
 }

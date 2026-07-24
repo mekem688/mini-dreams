@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 
 const isReplit = !!process.env.REPL_ID;
 
-// PORT — requis sur Replit, ignoré en build CI/Cloudflare
+// PORT — requis sur Replit, ignoré pendant les builds statiques
 const port = Number(process.env.PORT ?? 3000);
 
 // BASE_PATH — '/' par défaut hors Replit
@@ -43,7 +43,7 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname),
   build: {
-    // Cloudflare Pages & GitHub Actions lisent artifacts/mini-dreams/dist
+    // Netlify et Vercel publient artifacts/mini-dreams/dist
     outDir: path.resolve(import.meta.dirname, 'dist'),
     emptyOutDir: true,
   },
