@@ -7,9 +7,11 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy Mini Dreams
+    name: Build & Deploy Mini Dreams
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -28,8 +30,7 @@ jobs:
         run: pnpm --filter @workspace/mini-dreams run build
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy artifacts/mini-dreams/dist --project-name=mini-dreams --commit-dirty=true
+        run: npx wrangler pages deploy artifacts/mini-dreams/dist --project-name=mini-dreams --commit-dirty=true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
