@@ -3,12 +3,19 @@ import { Link } from 'wouter';
 import { ArrowRight, ShieldCheck, Wrench, Truck, Star } from 'lucide-react';
 import { products } from '@/data/products';
 import { ProductCard } from '@/components/ProductCard';
+import { SEO } from '@/components/SEO';
 
 export default function Home() {
   const featuredProducts = products.slice(0, 4);
 
   return (
-    <div className="w-full">
+    <>
+      <SEO
+        title="Véhicules électriques pour enfants | Mini Dreams"
+        description="Mini Dreams propose des voitures électriques pour enfants, quads et motos inspirés des grandes marques, avec livraison en Belgique depuis Bruxelles."
+        path="/"
+      />
+      <div className="w-full">
 
       {/* ── HERO : fond blanc, image à droite ── */}
       <section className="w-full bg-white overflow-hidden">
@@ -195,5 +202,6 @@ export default function Home() {
       </section>
 
     </div>
+    </>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { products } from '@/data/products';
 import { ProductCard } from '@/components/ProductCard';
+import { SEO } from '@/components/SEO';
 
 const CATEGORIES = ["Tous", "Supercar", "SUV Premium", "Édition Spéciale", "Quad & Moto", "Télécommandé"];
 const SORT_OPTIONS = [
@@ -32,7 +33,14 @@ export default function Boutique() {
   }, [selectedCategory, sortBy]);
 
   return (
-    <div className="w-full bg-gray-50 min-h-screen py-16">
+    <>
+      <SEO
+        title="Boutique de voitures électriques pour enfants | Mini Dreams"
+        description="Parcourez la collection Mini Dreams : voitures électriques, SUV, quads et motos pour enfants, disponibles en Belgique."
+        path="/boutique"
+        breadcrumbs={[{ name: "Accueil", path: "/" }, { name: "Boutique", path: "/boutique" }]}
+      />
+      <div className="w-full bg-gray-50 min-h-screen py-16">
       <div className="container mx-auto px-4 lg:px-8">
         
         {/* Header */}
@@ -112,5 +120,6 @@ export default function Boutique() {
         </div>
       </div>
     </div>
+    </>
   );
 }

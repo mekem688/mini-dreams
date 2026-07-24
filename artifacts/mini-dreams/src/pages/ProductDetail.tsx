@@ -3,6 +3,7 @@ import { useParams, useLocation } from 'wouter';
 import { Heart, ChevronRight, Check, AlertCircle, MessageCircle } from 'lucide-react';
 import { products } from '@/data/products';
 import { useWishlist } from '@/hooks/use-wishlist';
+import { SEO } from '@/components/SEO';
 
 export default function ProductDetail() {
   const params = useParams();
@@ -38,6 +39,7 @@ export default function ProductDetail() {
   }
 
   const isWished = isInWishlist(product.id);
+  const productPath = `/produit/${product.id}`;
   const toggleWishlist = () => {
     if (isWished) removeItem(product.id);
     else addItem(product);
@@ -47,7 +49,27 @@ export default function ProductDetail() {
   const whatsappUrl = `https://wa.me/32470000000?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
-    <div className="bg-white">
+    <>
+      <SEO
+        title={`${product.name} | Mini Dreams`}
+        description={product.description}
+        path={productPath}
+        type="product"
+        image={product.images[0]}
+        breadcrumbs={[
+          { name: "Accueil", path: "/" },
+          { name: "Boutique", path: "/boutique" },
+          { name: product.name, path: productPath },
+        ]}
+        product={{
+          name: product.name,
+          description: product.description,
+          price: product.price,
+          image: product.images[0],
+          category: product.category,
+        }}
+      />
+      <div className="bg-white">
       {/* Breadcrumb */}
       <div className="border-b border-gray-100 py-4">
         <div className="container mx-auto px-4 lg:px-8 flex items-center text-xs font-semibold uppercase tracking-wider text-gray-400">
@@ -178,5 +200,6 @@ export default function ProductDetail() {
         </div>
       </div>
     </div>
+    </>
   );
 }

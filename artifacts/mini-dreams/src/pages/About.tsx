@@ -1,10 +1,18 @@
 import React from 'react';
+import { SEO } from '@/components/SEO';
 import { products } from '@/data/products';
 import { ShieldCheck, Wrench, Star, ThumbsUp } from 'lucide-react';
 
 export default function About() {
   return (
-    <div className="bg-white">
+    <>
+      <SEO
+        title="À propos de Mini Dreams | Mobilité électrique pour enfants"
+        description="Découvrez Mini Dreams, la boutique bruxelloise de véhicules électriques premium pour enfants, pensée pour créer des souvenirs en famille."
+        path="/a-propos"
+        breadcrumbs={[{ name: "Accueil", path: "/" }, { name: "À propos", path: "/a-propos" }]}
+      />
+      <div className="bg-white">
 
       {/* ── EN-TÊTE CLAIR ── */}
       <section className="w-full bg-gray-50 border-b border-gray-100 py-24 lg:py-32">
@@ -114,5 +122,6 @@ export default function About() {
         </div>
       </section>
     </div>
+    </>
   );
 }

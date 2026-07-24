@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Mail, MessageCircle } from 'lucide-react';
+import { SEO } from '@/components/SEO';
 
 export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
@@ -8,7 +9,14 @@ export default function Contact() {
   };
 
   return (
-    <div className="bg-white">
+    <>
+      <SEO
+        title="Contact Mini Dreams | Showroom de véhicules enfants à Bruxelles"
+        description="Contactez Mini Dreams à Bruxelles pour découvrir nos voitures électriques, quads et motos pour enfants ou demander conseil avant votre commande."
+        path="/contact"
+        breadcrumbs={[{ name: "Accueil", path: "/" }, { name: "Contact", path: "/contact" }]}
+      />
+      <div className="bg-white">
 
       {/* ── EN-TÊTE CLAIR ── */}
       <section className="w-full bg-gray-50 border-b border-gray-100 py-20 lg:py-28">
@@ -166,5 +174,6 @@ export default function Contact() {
         </div>
       </div>
     </div>
+    </>
   );
 }

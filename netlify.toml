@@ -1,0 +1,18 @@
+# Netlify configuration for Mini Dreams
+[build]
+  command = "pnpm install --frozen-lockfile && pnpm --filter @workspace/mini-dreams run build"
+  publish = "artifacts/mini-dreams/dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NODE_ENV = "production"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public,max-age=31536000,immutable"
