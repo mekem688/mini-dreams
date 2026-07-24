@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Mini Dreams"
+version = "1.0.0"
+id = "artifacts/mini-dreams"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24520
+
+[services.development]
+run = "pnpm --filter @workspace/mini-dreams run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/mini-dreams", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/mini-dreams/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24520"
+BASE_PATH = "/"
