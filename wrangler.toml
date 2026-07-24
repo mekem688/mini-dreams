@@ -1,0 +1,10 @@
+name = "mini-dreams"
+compatibility_date = "2024-01-01"
+
+[site]
+bucket = "./artifacts/mini-dreams/dist"
+
+# Cloudflare Pages build configuration
+# Build command : pnpm --filter @workspace/mini-dreams run build
+# Output dir    : artifacts/mini-dreams/dist
+# Node version  : 20
