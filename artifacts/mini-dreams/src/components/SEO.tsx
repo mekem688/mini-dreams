@@ -95,7 +95,7 @@ export function SEO({
         description:
           "Boutique bruxelloise de voitures électriques, quads et motos pour enfants.",
         telephone: "+32 470 00 00 00",
-        email: "contact@minidreams.be",
+        email: "minidreams84@gmail.com",
         priceRange: "€€",
         address: {
           "@type": "PostalAddress",

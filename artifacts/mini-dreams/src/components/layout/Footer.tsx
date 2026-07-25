@@ -24,6 +24,7 @@ export function Footer() {
               <li><Link href="/" className="hover:text-accent transition-colors">Accueil</Link></li>
               <li><Link href="/boutique" className="hover:text-accent transition-colors">Notre Collection</Link></li>
               <li><Link href="/a-propos" className="hover:text-accent transition-colors">Notre Histoire</Link></li>
+              <li><Link href="/faq" className="hover:text-accent transition-colors">Questions fréquentes</Link></li>
               <li><Link href="/contact" className="hover:text-accent transition-colors">Contact</Link></li>
             </ul>
           </div>
@@ -42,7 +43,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="shrink-0 text-accent" />
-                <span>contact@minidreams.be</span>
+                <a href="mailto:minidreams84@gmail.com" className="hover:text-accent transition-colors">minidreams84@gmail.com</a>
               </li>
             </ul>
           </div>

@@ -12,6 +12,7 @@ export function Navbar() {
     { href: '/', label: 'Accueil' },
     { href: '/boutique', label: 'Boutique' },
     { href: '/a-propos', label: 'À Propos' },
+    { href: '/faq', label: 'FAQ' },
     { href: '/contact', label: 'Contact' },
   ];
 

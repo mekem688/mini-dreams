@@ -8,6 +8,7 @@ import Boutique from '@/pages/Boutique';
 import ProductDetail from '@/pages/ProductDetail';
 import About from '@/pages/About';
 import Contact from '@/pages/Contact';
+import FAQ from '@/pages/FAQ';
 import NotFound from '@/pages/not-found';
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ function App() {
               <Route path="/produit/:id" component={ProductDetail} />
               <Route path="/a-propos" component={About} />
               <Route path="/contact" component={Contact} />
+              <Route path="/faq" component={FAQ} />
               <Route component={NotFound} />
             </Switch>
           </main>

@@ -52,7 +52,7 @@ export default function Contact() {
                   {
                     Icon: Mail,
                     title: 'Email',
-                    content: 'contact@minidreams.be',
+                    content: 'minidreams84@gmail.com',
                   },
                 ].map(({ Icon, title, content }) => (
                   <li key={title} className="flex items-start gap-4">
