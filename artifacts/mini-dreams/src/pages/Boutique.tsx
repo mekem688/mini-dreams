@@ -36,7 +36,7 @@ export default function Boutique() {
     <>
       <SEO
         title="Boutique de voitures électriques pour enfants | Mini Dreams"
-        description="Parcourez la collection Mini Dreams : voitures électriques, SUV, quads et motos pour enfants, disponibles en Belgique."
+        description="Parcourez la collection Mini Dreams : voitures électriques, SUV, quads et motos pour enfants, disponibles au Royaume-Uni."
         path="/boutique"
         breadcrumbs={[{ name: "Accueil", path: "/" }, { name: "Boutique", path: "/boutique" }]}
       />

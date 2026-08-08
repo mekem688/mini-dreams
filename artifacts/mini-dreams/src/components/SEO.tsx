@@ -75,7 +75,7 @@ export function SEO({
     setMeta("property", "og:url", canonicalUrl);
     setMeta("property", "og:type", type);
     setMeta("property", "og:image", imageUrl);
-    setMeta("property", "og:locale", "fr_BE");
+    setMeta("property", "og:locale", "fr_GB");
     setMeta("property", "og:site_name", SITE_NAME);
     setMeta("property", "og:image:alt", `${SITE_NAME} — ${title}`);
     setMeta("name", "twitter:card", "summary_large_image");
@@ -93,20 +93,18 @@ export function SEO({
         name: SITE_NAME,
         url: siteUrl,
         description:
-          "Boutique bruxelloise de voitures électriques, quads et motos pour enfants.",
-        telephone: "+32 470 00 00 00",
+          "Boutique londonienne de voitures électriques, quads et motos pour enfants.",
+        telephone: "+44 7848 412475",
         email: "minidreams84@gmail.com",
         priceRange: "€€",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Avenue Louise 123",
-          postalCode: "1000",
-          addressLocality: "Bruxelles",
-          addressCountry: "BE",
+          addressLocality: "Londres",
+          addressCountry: "GB",
         },
         areaServed: {
           "@type": "Country",
-          name: "Belgique",
+          name: "Angleterre",
         },
         openingHoursSpecification: [
           {
@@ -129,7 +127,7 @@ export function SEO({
         "@id": `${siteUrl}/#website`,
         name: SITE_NAME,
         url: siteUrl,
-        inLanguage: "fr-BE",
+        inLanguage: "fr-GB",
         publisher: { "@id": `${siteUrl}/${BUSINESS_ID}` },
       },
     ];

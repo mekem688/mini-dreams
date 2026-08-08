@@ -46,7 +46,7 @@ export default function ProductDetail() {
   };
 
   const whatsappMessage = `Bonjour, je souhaite commander le ${product.name} à ${product.price}€ sur Mini Dreams.`;
-  const whatsappUrl = `https://wa.me/32470000000?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappUrl = `https://wa.me/447848412475?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <>

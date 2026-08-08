@@ -8,7 +8,7 @@ export default function About() {
     <>
       <SEO
         title="À propos de Mini Dreams | Mobilité électrique pour enfants"
-        description="Découvrez Mini Dreams, la boutique bruxelloise de véhicules électriques premium pour enfants, pensée pour créer des souvenirs en famille."
+        description="Découvrez Mini Dreams, la boutique londonienne de véhicules électriques premium pour enfants, pensée pour créer des souvenirs en famille."
         path="/a-propos"
         breadcrumbs={[{ name: "Accueil", path: "/" }, { name: "À propos", path: "/a-propos" }]}
       />
@@ -23,7 +23,7 @@ export default function About() {
           </h1>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto font-light leading-relaxed">
             Né d'une passion pour l'automobile et d'un désir d'offrir l'excellence aux plus jeunes,
-            Mini Dreams s'est imposé comme la référence bruxelloise du véhicule pour enfant.
+            Mini Dreams s'est imposé comme la référence londonienne du véhicule pour enfant.
           </p>
         </div>
       </section>
@@ -35,7 +35,7 @@ export default function About() {
             <div>
               <h2 className="font-serif text-3xl font-bold text-gray-900 mb-6">L'exigence du détail</h2>
               <p className="text-gray-600 leading-relaxed text-lg font-light mb-6">
-                Lorsque nous avons fondé Mini Dreams à Bruxelles, nous avions un constat simple : il était
+                Lorsque nous avons fondé Mini Dreams à Londres, nous avions un constat simple : il était
                 difficile de trouver des véhicules pour enfants qui alliaient véritablement sécurité, design
                 réaliste et fiabilité mécanique. La plupart des jouets sur le marché manquaient de finitions
                 et tombaient rapidement en panne.
@@ -58,7 +58,7 @@ export default function About() {
             <div>
               <h2 className="font-serif text-3xl font-bold text-gray-900 mb-6">Le choix de la sécurité</h2>
               <p className="text-gray-600 leading-relaxed text-lg font-light">
-                Chaque modèle proposé dans notre showroom bruxellois répond aux normes européennes CE les plus
+                Chaque modèle proposé dans notre showroom londonien répond aux normes européennes CE les plus
                 strictes. Parce que le conducteur est souvent un apprenti, tous nos véhicules sont équipés
                 d'une télécommande parentale prioritaire, de ceintures de sécurité, et de systèmes de freinage
                 automatique.
@@ -92,7 +92,7 @@ export default function About() {
               {
                 Icon: ShieldCheck,
                 title: 'Expertise Locale',
-                text: "Une équipe basée à Bruxelles qui connaît parfaitement ses produits et vous conseille selon l'âge et les besoins de votre enfant.",
+                 text: "Une équipe basée à Londres qui connaît parfaitement ses produits et vous conseille selon l'âge et les besoins de votre enfant.",
               },
               {
                 Icon: Star,
@@ -102,12 +102,12 @@ export default function About() {
               {
                 Icon: Wrench,
                 title: 'SAV & Garantie',
-                text: '2 ans de garantie avec un atelier de réparation et un stock de pièces détachées situé à Bruxelles.',
+                 text: '2 ans de garantie avec un atelier de réparation et un stock de pièces détachées situé à Londres.',
               },
               {
                 Icon: ThumbsUp,
                 title: 'Satisfaction Client',
-                text: "Plus de 500 familles nous ont fait confiance en Belgique pour l'achat du véhicule de leurs enfants.",
+                 text: "Plus de 500 familles nous ont fait confiance au Royaume-Uni pour l'achat du véhicule de leurs enfants.",
               },
             ].map(({ Icon, title, text }) => (
               <div key={title} className="text-center">

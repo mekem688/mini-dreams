@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import { SEO } from '@/components/SEO';
 
-const WHATSAPP_NUMBER = '32470000000';
+const WHATSAPP_NUMBER = '447848412475';
 
 const categories = [
   {
@@ -24,7 +24,7 @@ const categories = [
       },
       {
         q: "Puis-je voir le véhicule avant d'acheter ?",
-        a: "Absolument ! Notre showroom est ouvert du lundi au vendredi de 10h à 18h30 et le samedi de 10h à 19h. Venez découvrir les véhicules de vive voix, voir la qualité des finitions et tester les fonctionnalités. Adresse : Avenue Louise 123, 1000 Bruxelles.",
+        a: "Absolument ! Notre showroom est ouvert du lundi au vendredi de 10h à 18h30 et le samedi de 10h à 19h. Venez découvrir les véhicules de vive voix, voir la qualité des finitions et tester les fonctionnalités. Adresse : Londres, Angleterre.",
       },
       {
         q: "Quels véhicules sont disponibles immédiatement ?",
@@ -69,8 +69,8 @@ const categories = [
     title: 'Livraison en Europe',
     faqs: [
       {
-        q: "Livrez-vous partout en Belgique ?",
-        a: "Oui, nous livrons dans toute la Belgique. La livraison standard prend 2 à 4 jours ouvrables après réception du paiement. Nous travaillons avec des transporteurs spécialisés pour les colis volumineux afin de garantir la sécurité de votre commande.",
+        q: "Livrez-vous partout au Royaume-Uni ?",
+        a: "Oui, nous livrons dans tout le Royaume-Uni. La livraison standard prend 2 à 4 jours ouvrables après réception du paiement. Nous travaillons avec des transporteurs spécialisés pour les colis volumineux afin de garantir la sécurité de votre commande.",
       },
       {
         q: "Livrez-vous à l'international ?",
@@ -124,7 +124,7 @@ const categories = [
       },
       {
         q: "Où se trouve votre service après-vente ?",
-        a: "Notre atelier SAV est basé à Bruxelles. Vous n'envoyez pas votre véhicule à l'autre bout de l'Europe — vous venez chez nous, ou nous organisons une collecte. Réparations réalisées sur place, en général sous 48 à 72 heures.",
+        a: "Notre atelier SAV est basé à Londres. Vous n'envoyez pas votre véhicule à l'autre bout de l'Europe — vous venez chez nous, ou nous organisons une collecte. Réparations réalisées sur place, en général sous 48 à 72 heures.",
       },
       {
         q: "Comment contacter le SAV ?",
@@ -210,7 +210,7 @@ export default function FAQ() {
     <>
       <SEO
         title="Questions fréquentes | Mini Dreams"
-        description="Tout savoir sur la commande, le paiement sécurisé via WhatsApp, la livraison en Belgique et en Europe, la garantie 2 ans et la sécurité de nos véhicules électriques pour enfants."
+        description="Tout savoir sur la commande, le paiement sécurisé via WhatsApp, la livraison au Royaume-Uni et en Europe, la garantie 2 ans et la sécurité de nos véhicules électriques pour enfants."
         path="/faq"
         breadcrumbs={[{ name: 'Accueil', path: '/' }, { name: 'FAQ', path: '/faq' }]}
       />
@@ -336,7 +336,7 @@ export default function FAQ() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { name: 'Sophie M.', city: 'Bruxelles', stars: 5, text: "Livraison en 3 jours, véhicule parfait. Mon fils de 4 ans est aux anges ! La télécommande parentale est vraiment rassurante." },
+              { name: 'Sophie M.', city: 'Londres', stars: 5, text: "Livraison en 3 jours, véhicule parfait. Mon fils de 4 ans est aux anges ! La télécommande parentale est vraiment rassurante." },
               { name: 'Thomas D.', city: 'Liège', stars: 5, text: "Service WhatsApp ultra-réactif. Question posée à 20h, réponse à 20h10. La Lamborghini est identique aux photos. Qualité au rendez-vous." },
               { name: 'Amélie K.', city: 'Gand', stars: 5, text: "Acheté pour offrir à Noël, emballage cadeau proposé, livraison planifiée. Un sans-faute. Je recommande sans hésiter." },
             ].map(({ name, city, stars, text }) => (
@@ -405,7 +405,7 @@ export default function FAQ() {
               { icon: ShieldCheck, label: 'Paiement 100 % sécurisé', sub: 'Virement ou espèces uniquement' },
               { icon: Zap,         label: 'Réponse express',         sub: 'Sous 1 heure en semaine' },
               { icon: Truck,       label: 'Livraison Europe',         sub: '2 à 7 jours ouvrables' },
-              { icon: Award,       label: 'Garantie 2 ans',          sub: 'SAV à Bruxelles' },
+              { icon: Award,       label: 'Garantie 2 ans',          sub: 'SAV à Londres' },
             ].map(({ icon: Icon, label, sub }) => (
               <div key={label} className="flex flex-col items-center gap-3">
                 <div className="w-12 h-12 bg-gray-50 border border-gray-200 flex items-center justify-center">

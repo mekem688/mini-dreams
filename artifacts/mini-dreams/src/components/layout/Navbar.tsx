@@ -57,13 +57,13 @@ export function Navbar() {
           {/* Right Actions */}
           <div className="flex-1 flex items-center justify-end space-x-4 lg:space-x-6">
             <a 
-              href="https://wa.me/32470000000" 
+              href="https://wa.me/447848412475"
               target="_blank" 
               rel="noopener noreferrer"
               className="hidden lg:flex items-center gap-2 text-sm font-medium hover:text-accent transition-colors"
             >
               <Phone size={18} />
-              <span>+32 470 00 00 00</span>
+              <span>+44 7848 412475</span>
             </a>
             
             <Link href="/boutique" className="relative p-2 -mr-2 text-gray-900 hover:text-accent transition-colors group">
@@ -96,13 +96,13 @@ export function Navbar() {
             ))}
             <div className="pt-4 mt-2 border-t border-gray-100">
               <a 
-                href="https://wa.me/32470000000" 
+                href="https://wa.me/447848412475"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-gray-900 font-medium"
               >
                 <Phone size={20} />
-                <span>+32 470 00 00 00</span>
+                <span>+44 7848 412475</span>
               </a>
             </div>
           </div>

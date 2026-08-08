@@ -1,0 +1,1 @@
+- [Remote source of truth](remote-source-of-truth.md) — use the complete Mini Dreams GitHub history when it differs from the starter workspace.

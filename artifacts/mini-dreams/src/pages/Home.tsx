@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <SEO
         title="Véhicules électriques pour enfants | Mini Dreams"
-        description="Mini Dreams propose des voitures électriques pour enfants, quads et motos inspirés des grandes marques, avec livraison en Belgique depuis Bruxelles."
+        description="Mini Dreams propose des voitures électriques pour enfants, quads et motos inspirés des grandes marques, avec livraison au Royaume-Uni depuis Londres."
         path="/"
       />
       <div className="w-full">
@@ -25,7 +25,7 @@ export default function Home() {
             {/* Texte */}
             <div className="lg:w-1/2 py-20 lg:py-0 lg:pr-16 z-10">
               <div className="inline-block px-3 py-1 mb-6 border border-accent/60 text-accent text-xs font-semibold tracking-widest uppercase">
-                Boutique Premium · Bruxelles
+                Boutique Premium · Londres
               </div>
               <h1 className="text-5xl md:text-6xl xl:text-7xl font-serif font-bold leading-[1.08] mb-6 text-gray-900">
                 Le premier{' '}
@@ -79,7 +79,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { icon: ShieldCheck, title: 'Garantie 2 Ans', sub: "Sur l'ensemble de nos véhicules" },
-              { icon: Wrench,      title: 'SAV à Bruxelles', sub: 'Atelier de réparation localisé' },
+              { icon: Wrench,      title: 'SAV à Londres', sub: 'Atelier de réparation localisé' },
               { icon: Truck,       title: 'Livraison Europe', sub: 'Expédition rapide et soignée' },
               { icon: Star,        title: 'Licences Officielles', sub: 'Répliques fidèles et certifiées CE' },
             ].map(({ icon: Icon, title, sub }) => (
@@ -133,7 +133,7 @@ export default function Home() {
               {/* Stat flottante */}
               <div className="absolute -bottom-6 -right-6 w-56 h-56 bg-accent p-8 text-white hidden md:flex flex-col justify-center shadow-xl">
                 <p className="font-serif text-5xl mb-2">500+</p>
-                <p className="text-xs uppercase tracking-widest font-semibold opacity-90">Familles satisfaites en Belgique</p>
+                <p className="text-xs uppercase tracking-widest font-semibold opacity-90">Familles satisfaites au Royaume-Uni</p>
               </div>
             </div>
 
@@ -150,7 +150,7 @@ export default function Home() {
                   Chaque véhicule est équipé d'une télécommande parentale prioritaire. Sécurité, design et performance sont nos maîtres-mots.
                 </p>
                 <p>
-                  Notre showroom basé à Bruxelles nous permet d'assurer un service après-vente rapide. Vous n'êtes jamais seul après votre achat.
+                  Notre showroom basé à Londres nous permet d'assurer un service après-vente rapide. Vous n'êtes jamais seul après votre achat.
                 </p>
               </div>
               <div className="mt-10">

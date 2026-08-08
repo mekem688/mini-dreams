@@ -11,8 +11,8 @@ export default function Contact() {
   return (
     <>
       <SEO
-        title="Contact Mini Dreams | Showroom de véhicules enfants à Bruxelles"
-        description="Contactez Mini Dreams à Bruxelles pour découvrir nos voitures électriques, quads et motos pour enfants ou demander conseil avant votre commande."
+        title="Contact Mini Dreams | Showroom de véhicules enfants à Londres"
+        description="Contactez Mini Dreams à Londres pour découvrir nos voitures électriques, quads et motos pour enfants ou demander conseil avant votre commande."
         path="/contact"
         breadcrumbs={[{ name: "Accueil", path: "/" }, { name: "Contact", path: "/contact" }]}
       />
@@ -21,7 +21,7 @@ export default function Contact() {
       {/* ── EN-TÊTE CLAIR ── */}
       <section className="w-full bg-gray-50 border-b border-gray-100 py-20 lg:py-28">
         <div className="container mx-auto px-4 lg:px-8 text-center">
-          <p className="text-xs font-semibold tracking-widest text-accent uppercase mb-4">Boutique Bruxelles</p>
+          <p className="text-xs font-semibold tracking-widest text-accent uppercase mb-4">Boutique Londres</p>
           <h1 className="font-serif text-5xl md:text-6xl font-bold text-gray-900 mb-6">Contactez-nous</h1>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto font-light leading-relaxed">
             Notre équipe de spécialistes est à votre disposition pour vous conseiller et vous accompagner
@@ -42,12 +42,12 @@ export default function Contact() {
                   {
                     Icon: MapPin,
                     title: 'Showroom & Atelier',
-                    content: 'Avenue Louise 123\n1000 Bruxelles, Belgique',
+                    content: 'Londres, Angleterre',
                   },
                   {
                     Icon: Phone,
                     title: 'Téléphone & WhatsApp',
-                    content: '+32 470 00 00 00',
+                    content: '+44 7848 412475',
                   },
                   {
                     Icon: Mail,
@@ -94,7 +94,7 @@ export default function Contact() {
                 Le moyen le plus simple pour commander est de nous contacter directement via WhatsApp.
               </p>
               <a
-                href="https://wa.me/32470000000"
+                href="https://wa.me/447848412475"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#25D366] text-white px-6 py-3 text-sm font-bold uppercase tracking-wider hover:bg-[#20bd5a] transition-colors w-full"
@@ -162,7 +162,7 @@ export default function Contact() {
             <div className="bg-gray-50 h-72 w-full flex flex-col items-center justify-center border border-gray-200 relative overflow-hidden">
               <MapPin size={40} className="text-accent mb-4" />
               <h4 className="font-serif text-2xl font-bold text-gray-900 mb-1">Showroom Mini Dreams</h4>
-              <p className="text-gray-500 text-sm">Avenue Louise 123 · 1000 Bruxelles</p>
+              <p className="text-gray-500 text-sm">Londres · Angleterre</p>
               <div className="mt-6">
                 <span className="inline-block px-4 py-2 bg-white border border-gray-200 text-xs font-bold uppercase tracking-widest text-gray-600">
                   Plan interactif à venir
