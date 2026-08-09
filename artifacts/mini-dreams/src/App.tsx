@@ -9,6 +9,7 @@ import ProductDetail from '@/pages/ProductDetail';
 import About from '@/pages/About';
 import Contact from '@/pages/Contact';
 import FAQ from '@/pages/FAQ';
+import PaymentSuccess from '@/pages/PaymentSuccess';
 import NotFound from '@/pages/not-found';
 
 const queryClient = new QueryClient();
@@ -36,6 +37,7 @@ function App() {
               <Route path="/a-propos" component={About} />
               <Route path="/contact" component={Contact} />
               <Route path="/faq" component={FAQ} />
+              <Route path="/merci-paiement" component={PaymentSuccess} />
               <Route component={NotFound} />
             </Switch>
           </main>
