@@ -69,8 +69,15 @@ export default function PayPalBuy({
             onApprove: async (_data: any, actions: any) => {
               try {
                 const details = await actions.order.capture();
+                
+                // Sauvegarde les détails de la commande dans localStorage
+                localStorage.setItem('paypalOrderDetails', JSON.stringify(details));
+                
+                // Appelle la callback onSuccess si elle existe
                 if (onSuccess) onSuccess(details);
-                else alert("Paiement réussi. Merci !");
+                
+                // Redirige vers la page de confirmation de paiement
+                window.location.href = '/merci-paiement';
               } catch (err) {
                 if (onError) onError(err);
                 else alert("Erreur lors de la capture du paiement.");
