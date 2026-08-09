@@ -4,6 +4,7 @@ import { Heart, ChevronRight, Check, AlertCircle, MessageCircle } from 'lucide-r
 import { products } from '@/data/products';
 import { useWishlist } from '@/hooks/use-wishlist';
 import { SEO } from '@/components/SEO';
+import PayPalBuy from 'lib/api-client-react/src/components/PayPalBuy';
 
 export default function ProductDetail() {
   const params = useParams();
@@ -172,6 +173,10 @@ export default function ProductDetail() {
                 Commander via WhatsApp
               </a>
               
+              <div className="flex-1">
+                <PayPalBuy price={product.price} title={product.name} />
+              </div>
+
               <button 
                 onClick={toggleWishlist}
                 className={`sm:w-16 h-14 flex items-center justify-center border transition-colors ${
