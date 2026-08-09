@@ -4,7 +4,6 @@ import { Heart, ChevronRight, Check, AlertCircle, MessageCircle } from 'lucide-r
 import { products } from '@/data/products';
 import { useWishlist } from '@/hooks/use-wishlist';
 import { SEO } from '@/components/SEO';
-import PayPalBuy from 'lib/api-client-react/src/components/PayPalBuy';
 
 export default function ProductDetail() {
   const params = useParams();
@@ -173,8 +172,14 @@ export default function ProductDetail() {
                 Commander via WhatsApp
               </a>
               
-              <div className="flex-1">
-                <PayPalBuy price={product.price} title={product.name} />
+              {/* PayPal HTML snippet (official form) */}
+              <div style={{display: 'inline-grid', justifyItems: 'center', alignContent: 'start', gap: '0.5rem'}}>
+                <style>{`.pp-KBJK98YATZWVG{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}`}</style>
+                <form action="https://www.paypal.com/ncp/payment/KBJK98YATZWVG" method="post" target="_blank" style={{display: 'inline-grid', justifyItems: 'center', alignContent: 'start', gap: '0.5rem'}}>
+                  <input className="pp-KBJK98YATZWVG" type="submit" value="Acheter" />
+                  <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="cards" />
+                  <section style={{fontSize: '0.75rem'}}> Optimisé par <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style={{height: '0.875rem', verticalAlign: 'middle'}}/></section>
+                </form>
               </div>
 
               <button 
